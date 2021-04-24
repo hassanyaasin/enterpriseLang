@@ -20,13 +20,10 @@ public class TestKeyChain extends EnterpriseLangTest {
     @Test
     public void userRights(){
         var model = new accountDiscovery();
-        
+
         Attacker attacker = new Attacker();
         attacker.addAttackPoint(model.userAccount.userRights);
         attacker.attack();
-
-        model.os.accountDiscovery.assertCompromisedInstantaneously();
-        model.os.domainDiscovery.assertCompromisedInstantaneously();
 
     }
 }

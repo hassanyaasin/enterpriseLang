@@ -10,8 +10,8 @@ public class TestAccountDiscovery extends EnterpriseLangTest {
         public final OS os = new OS("os");
         public final Computer computer = new Computer("computer");
         
-        public accountDiscovery {
-           userAccount.addOS(os);
+        public accountDiscovery() {
+           userAccount.addOs(os);
            computer.addOs(os); 
 
         }
